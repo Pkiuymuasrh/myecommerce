@@ -5,9 +5,9 @@ import {
   increment,
   incrementAsync,
   selectCount,
-} from './counterSlice';
+} from './productListSlice';
 
-function Counter() {
+export default function ProductList() {
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
 
@@ -20,5 +20,3 @@ function Counter() {
     </div>
   );
 }
-
-export default Counter();
